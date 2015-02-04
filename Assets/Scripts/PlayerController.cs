@@ -4,12 +4,39 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
 	public float speed = 10;
+	public GameObject spawn;
 
 	private Vector3 destination;
 	private bool moving;
 
 	void Update ()
 	{
+		// Handle inputs:
+		handleRestartInput ();
+		handleMovementInput ();
+
+		// Move the unit according to `destination` and `moving`:
+		if (moving) {
+			this.transform.position = Vector3.MoveTowards(this.transform.position, destination, speed * Time.deltaTime);
+			// Stop moving if we reach the destination:
+			if (this.transform.position == destination)
+				moving = false;
+		}
+	}
+
+	void OnTriggerEnter (Collider other)
+	{
+		// If player hits a checkpoint, relocate the spawn to it:
+		if (other.tag == "checkpoint")
+			spawn.transform.position = other.gameObject.transform.position;
+	}
+
+	void handleRestartInput () {
+		if (Input.GetButton ("Restart"))
+			restart ();
+	}
+
+	void handleMovementInput () {
 		Vector3 moveVector = Vector3.zero;
 
 		// Set the move vector
@@ -22,17 +49,9 @@ public class PlayerController : MonoBehaviour {
 		} else if (Input.GetButton ("Down")) {
 			moveVector = Vector3.back;
 		}
-
+		
 		if (moveVector != Vector3.zero && !moving) {
 			move(moveVector);
-		}
-
-		// Move the unit:
-		if (moving) {
-			this.transform.position = Vector3.MoveTowards(this.transform.position, destination, speed * Time.deltaTime);
-			// Stop moving if we reach the destination:
-			if (this.transform.position == destination)
-				moving = false;
 		}
 	}
 
@@ -51,5 +70,13 @@ public class PlayerController : MonoBehaviour {
 		// (Currently assuming player size is 1.)
 		destination = hit.point - (direction.normalized * .5f);
 		moving = true;
+	}
+
+	void restart ()
+	{
+		// Restart by immediately repositioning to the spawn location:
+		transform.position = spawn.transform.position;
+		moving = false;
+		destination = spawn.transform.position;
 	}
 }
