@@ -239,7 +239,7 @@ GameObject:
   - 33: {fileID: 225660116}
   - 65: {fileID: 225660115}
   - 23: {fileID: 225660114}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider Cube
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -505,7 +505,7 @@ GameObject:
   - 33: {fileID: 750040499}
   - 65: {fileID: 750040498}
   - 23: {fileID: 750040497}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: West Wall
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -605,7 +605,7 @@ GameObject:
   - 33: {fileID: 763242446}
   - 65: {fileID: 763242445}
   - 23: {fileID: 763242444}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Renderer Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -676,7 +676,7 @@ GameObject:
   - 33: {fileID: 862893982}
   - 65: {fileID: 862893981}
   - 23: {fileID: 862893980}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Temporary Wall
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -1014,7 +1014,7 @@ GameObject:
   - 33: {fileID: 1102862403}
   - 65: {fileID: 1102862402}
   - 23: {fileID: 1102862401}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider Cube
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -1085,7 +1085,7 @@ GameObject:
   - 33: {fileID: 1189136238}
   - 65: {fileID: 1189136237}
   - 23: {fileID: 1189136236}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1154,7 +1154,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1208865101}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Visible Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1321,7 +1321,7 @@ GameObject:
   - 33: {fileID: 1354709060}
   - 65: {fileID: 1354709059}
   - 23: {fileID: 1354709058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: North Wall 1
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -1507,7 +1507,7 @@ GameObject:
   - 33: {fileID: 1479962072}
   - 65: {fileID: 1479962071}
   - 23: {fileID: 1479962070}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: South Wall
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -1606,7 +1606,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1535271402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Visible Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1638,7 +1638,7 @@ GameObject:
   - 33: {fileID: 1595800477}
   - 65: {fileID: 1595800476}
   - 23: {fileID: 1595800475}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Exit Hall Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1773,7 +1773,7 @@ GameObject:
   - 33: {fileID: 1791195026}
   - 65: {fileID: 1791195025}
   - 23: {fileID: 1791195024}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: North Wall 2
   m_TagString: wall
   m_Icon: {fileID: 0}
@@ -1845,7 +1845,7 @@ GameObject:
   - 33: {fileID: 1819013925}
   - 65: {fileID: 1819013924}
   - 23: {fileID: 1819013923}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Renderer Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2008,7 +2008,7 @@ GameObject:
   - 33: {fileID: 1829551691}
   - 65: {fileID: 1829551690}
   - 23: {fileID: 1829551689}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: East Wall
   m_TagString: wall
   m_Icon: {fileID: 0}

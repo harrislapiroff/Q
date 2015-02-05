@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3346880}
   - 65: {fileID: 6546880}
   - 23: {fileID: 2346880}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ice Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
